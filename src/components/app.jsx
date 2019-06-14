@@ -2,8 +2,8 @@ import React from 'react';
 // import logo from './logo.svg';
 import './app.css';
 
-import LandingPage from './landing-page/landing-page';
-import PlanItPage from './planit/planit'
+import LandingPage from './landing-page-screen/landing-page';
+import PlanItPage from './planit-screen/planit'
 
 
 import {BrowserRouter, Route, Link} from 'react-router-dom';
