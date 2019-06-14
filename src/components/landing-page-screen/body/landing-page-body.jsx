@@ -1,6 +1,8 @@
 import React from 'react';
 import './landing-page-body.css';
 
+import LandingPageBodyBox from './box/landing-page-body-box';
+
 export default function LandingPageBody(){
     return(
       <div>
@@ -15,20 +17,13 @@ export default function LandingPageBody(){
     
         </div>
   
-        {/* Body Infographic */}
+        {/* Body Box */}
         <div style={{border: '1px black solid', height: 'auto'}}>
           <div style={{width: '1364px', border: '1px solid black', margin: '30px auto', display: 'flex', flexDirection: 'row'}}>
-            <div style={{width: '260px', height: '290px', border: '1px solid black', flex: '1', marginRight: '130px'}}>
-              <p>Search Location</p>
-            </div>
-  
-            <div style={{width: '260px', height: '290px', border: '1px solid black', flex: '1', margin: '0px 130px '}}>
-              <p>Waypoint Summary</p>
-            </div>
-  
-            <div style={{width: '260px', height: '290px', border: '1px solid black', flex: '1', marginLeft: '130px'}}>
-              <p>PlanIt</p>
-            </div>
+
+            <LandingPageBodyBox desc="Search Location" style={{marginRight: '130px'}} />
+            <LandingPageBodyBox desc="Waypoint Summary" style={{margin: '0px 130px '}} />
+            <LandingPageBodyBox desc="PlanIt!" style={{marginLeft: '130px'}} />
   
           </div>
         </div>
