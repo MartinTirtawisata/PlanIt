@@ -6,12 +6,12 @@ import LandingPage from './landing-page-screen/landing-page';
 import PlanIt from './planit-screen/planit'
 
 
-import {BrowserRouter, Route, Link} from 'react-router-dom';
+import {BrowserRouter, Route} from 'react-router-dom';
 
 export default function App() {
 
   return (
-    <BrowserRouter >
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div>
         <Route exact path='/' component={LandingPage} />
         <Route path='/home' component={LandingPage} />
